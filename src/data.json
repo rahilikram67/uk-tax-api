@@ -1,0 +1,109 @@
+{
+    "Business Details": [
+        {
+            "url": "/individuals/business/details/{nino}/list",
+            "path": [
+                "nino"
+            ],
+            "method": "GET"
+        },
+        {
+            "url": "/individuals/business/details/{nino}/{businessId}",
+            "path": [
+                "nino",
+                "businessId"
+            ],
+            "method": "GET"
+        }
+    ],
+    "Business Income Source Summary": [
+        {
+            "url": "/individuals/self-assessment/income-summary/{nino}/{typeOfBusiness}/{taxYear}/{businessId}",
+            "path": [
+                "nino",
+                "typeOfBusiness",
+                "taxYear",
+                "businessId"
+            ],
+            "method": "GET"
+        }
+    ],
+    "Business Source Adjustable Summary": [
+        {
+            "url": "/individuals/self-assessment/adjustable-summary/{nino}",
+            "path": [
+                "nino"
+            ],
+            "method": "GET",
+            "query": [
+                "taxYear",
+                "typeOfBusiness",
+                "businessId"
+            ]
+        },
+        {
+            "url": "/individuals/self-assessment/adjustable-summary/{nino}/trigger",
+            "path": [
+                "nino"
+            ],
+            "method": "POST"
+        },
+        {
+            "url": "/individuals/self-assessment/adjustable-summary/{nino}/self-employment/{calculationId}",
+            "path": [
+                "nino",
+                "calculationId"
+            ],
+            "method": "GET",
+            "query": [
+                "taxYear",
+                "typeOfBusiness",
+                "businessId"
+            ]
+        },
+        {
+            "url": "/individuals/self-assessment/adjustable-summary/{nino}/self-employment/{calculationId}/adjust",
+            "path": [
+                "nino",
+                "calculationId"
+            ],
+            "method": "POST"
+        },
+        {
+            "url": "/individuals/self-assessment/adjustable-summary/{nino}/uk-property/{calculationId}",
+            "path": [
+                "nino",
+                "calculationId"
+            ],
+            "method": "GET"
+        },
+        {
+            "url": "/individuals/self-assessment/adjustable-summary/{nino}/uk-property/{calculationId}/adjust",
+            "path": [
+                "nino",
+                "calculationId"
+            ],
+            "method": "POST"
+        },
+        {
+            "url": "/individuals/self-assessment/adjustable-summary/{nino}/foreign-property/{calculationId}",
+            "path": [
+                "nino",
+                "calculationId"
+            ],
+            "method": "GET"
+        },
+        {
+            "url": "/individuals/self-assessment/adjustable-summary/{nino}/foreign-property/{calculationId}/adjust",
+            "path": [
+                "nino",
+                "calculationId"
+            ],
+            "method": "POST"
+        }
+    ],
+    "CIS Deductions": [],
+    "Individual Calculations": [],
+    "Individual Losses": [],
+    "Individuals Business Statement": []
+}
